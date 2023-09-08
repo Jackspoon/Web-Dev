@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Who is the better spiderman?</title>
+        <title>Who is your favorite spiderman?</title>
     </head>
     <body>
-        <h1>Who is the best spiderman?</h1>
-        <p>In this survey, we will go over your favorite spiderman across the multiverses and why. When answering, describe everything as if we know not who any of them are.</p>
+        <h1>Who is your favorite spiderman?</h1>
+        <p>In this survey, we will go over your favorite spiderman across the multiverses and why. When answering, describe everything as if we don't know who they are.</p>
         <form action="">
+            <label for="Peter">What is their name?</label>
+            <input type="text" name="name" id="Peter" placeholder="Name"><br>
             <input type="radio" name="gender" id="Male">
             <label for="Male">Male</label>
             <input type="radio" name="gender" id="female">
@@ -24,6 +26,13 @@
                 <option value="">Indian</option>
                 <option value="">Native American</option>
             </select><br>
+            <label for="Hair">What is their hair color?</label>
+            <select name="color" id="Hair">
+                <option value="">Brown</option>
+                <option value="">Blond</option>
+                <option value="">Black</option>
+                <option value="">Red</option>
+            </select><br>
             <label for="Ben">Who is their Uncle Ben equivalent?</label>
             <input type="text" id="Ben" placeholder="Uncle ben"><br>
             <label for="May">Did they have a caring and loving Aunt May figure?</label>
@@ -39,6 +48,16 @@
             <label for="docOck">Doc Ock</label><br>
             <input type="checkbox" name="bad" id="Rhino">
             <label for="Rhino">Rhino</label><br>
+            <input type="checkbox" name="bad" id="Electro">
+            <label for="Electro">Electro</label><br>
+
+            <input type="text" name="other" id="Other" placeholder="Other enemies"><br>
+            <input type="text" name="weak" id="weak" placeholder="Weaknesess"><br>
+            <input type="text" name="info" id="Info" placeholder="Other information"><br>
+            <input type="text" name="your" id="your" placeholder="Your name"><br>
+            <input type="text" name="date" id="date" placeholder="Date mm/dd/yyyy"><br>
+            <button>Complete survey</button>
+            
         </form>
     </body>
 </html>
