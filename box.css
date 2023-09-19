@@ -1,0 +1,19 @@
+body {
+    margin: 500px;
+}
+
+#white {
+    height: 300px;
+    width: 450px;
+    border: solid 2px black;
+}
+
+#red {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 100%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 150px;
+}
