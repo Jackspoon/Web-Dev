@@ -1,0 +1,92 @@
+header {
+    background-color: purple;
+    height: 20vh;
+    margin: 10px;
+    animation-name: color-swap;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+nav > div {
+    background-color: skyblue;
+    height: 50px;
+    margin: 10px;
+    animation-name: lengthinator;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+aside {
+    background-color: royalblue;
+    height: 50vh;
+    margin: 10px;
+    animation-name: all-change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    background-color: blue;
+    height: 10vh;
+    margin: 10px;
+}
+
+@keyframes all-change {
+    from
+     {height: 100%;
+    width: 100%;}
+    to {
+        height: 0%;
+        width: 0%;
+    }
+}
+
+@keyframes lengthinator {
+    0% {
+        width: 100%;
+    }
+    25% {
+        width: 0%;
+    }
+    50% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes color-swap {
+    0% {background-color: red;}
+    15% {background-color: orange;}
+    30% {background-color: yellow;}
+    45% {background-color: green;}
+    60% {background-color: blue;}
+    75% {background-color: purple;}
+    100% {background-color: red}
+
+@media screen and (min-width: 992px){
+    header {
+        height: 15vh;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav > div {
+        height: 25px;
+        width: 100px;
+    }
+
+    aside {
+        width: 25vw;
+    }
+
+    
+}
