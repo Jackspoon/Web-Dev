@@ -1,3 +1,26 @@
+body {
+    animation-name: backround;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backround {
+    0% {
+        background-color: white;
+        
+    }
+    25% {
+        background-color: black;
+    }
+    75% {
+        background-color: black;
+        
+    }
+    100% {
+        background-color: white;
+    }
+}
+
 header {
     background-color: purple;
     height: 20vh;
@@ -17,34 +40,9 @@ nav > div {
     animation-iteration-count: infinite;
 }
 
-aside {
-    background-color: royalblue;
-    height: 50vh;
-    margin: 10px;
-    animation-name: all-change;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-footer {
-    background-color: blue;
-    height: 10vh;
-    margin: 10px;
-}
-
-@keyframes all-change {
-    from
-     {height: 100%;
-    width: 100%;}
-    to {
-        height: 0%;
-        width: 0%;
-    }
-}
-
 @keyframes lengthinator {
     0% {
-        width: 100%;
+        width: 10000%;
     }
     25% {
         width: 0%;
@@ -53,10 +51,58 @@ footer {
         width: 0%;
     }
     100% {
-        width: 100%;
+        width: 10000%;
     }
 
 }
+
+aside {
+    background-color: royalblue;
+    height: 50vh;
+    margin: 10px;
+    animation-name: all-change;
+    animation-duration: 13s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    background-color: blue;
+    height: 10vh;
+    margin: 10px;
+    animation-name: color;
+    animation-duration: 6s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite
+}
+
+@keyframes color {
+    25% {
+        background-color: darkblue;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: darkblue;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes all-change {
+    0% {width: 100%;
+        border-radius: 0%;
+    }
+    50% {width: 25%;
+    border-radius: 100%;
+    }
+    100% {width: 100%;
+    border-radius: 0%;
+    }
+}
+
 
 @keyframes color-swap {
     0% {background-color: red;}
@@ -66,10 +112,15 @@ footer {
     60% {background-color: blue;}
     75% {background-color: purple;}
     100% {background-color: red}
-
+}
 @media screen and (min-width: 992px){
     header {
         height: 15vh;
+    }
+
+    body {
+        height: 100vh;
+        width: 75vh;
     }
 
     #content {
