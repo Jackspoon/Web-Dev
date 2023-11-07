@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+}
+
+div {
+    font-style: italic;
+}
+
+#jack {
+    background-color: red;
+    color: rgb(43, 233, 43);
+}
+
+#karli {
+    background-color: white;
+    color: black;
+}
+
+#velvet {
+    background-color: orange;
+    color: blue;
+}
+
+#Michael {
+    background-color: black;
+    color: white;
+}
