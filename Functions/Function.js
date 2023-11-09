@@ -5,7 +5,7 @@
 // Call that function 3 times with 3 different values for the arguments.
 
 function tellFortune() {
-    e.preventDefault();
+    event.preventDefault();
 
     numOfChildren = document.getElementById("children").value;
     partnerName = document.getElementById("partner").value;
