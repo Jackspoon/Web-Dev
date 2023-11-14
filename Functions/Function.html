@@ -4,17 +4,43 @@
         <link rel="stylesheet" href="Function.css">
     </head>
     <body>
-            <div id="here"></div>
-            <div>
-                <form action="">
-                    <input type="number" id="children" placeholder="Enter number">
-                    <input type="text" id="partner" placeholder="Enter a name">
-                    <input type="text" id="location" placeholder="Enter a location">
-                    <input type="text" id="job" placeholder="Enter job">
-                    <button onclick="tellFortune()">Tell My Fortune</button>
-                </form>
-                <p id="Fortune"></p>
-            </div>
+        <div id="here"></div>
+        <div>
+                <input type="number" id="children" placeholder="Enter number">
+                <input type="text" id="partner" placeholder="Enter a name">
+                <input type="text" id="job" placeholder="Enter job">
+                <button onclick="tellFortune()">Tell My Fortune</button>
+            <p id="Fortune"></p>
+        </div>
+        <div>
+            <input type="number" id="dog-age" placeholder="Enter yoru dog's age">
+            <button onclick="calculateDogAge()">calculate age</button>
+            <p id="age"></p>
+        </div>
+        <div>
+            <input type="number" id="current-age" placeholder="Enter your age">
+            <input type="number" id="amount-per-day" placeholder="amount per day">
+            <input type="text" id="Item" placeholder="Item">
+            <button onclick="calculateSupply()">Calculate Supply</button>
+            <p id="supply"></p>
+        </div>
+        <div>
+            <input type="number" id="radius" placeholder="Radius">
+            <button onclick="calcCircumfrence()">Calculate Circumference</button>
+            <p id="circumference"></p>
+            <button onclick="calcArea()">Calculate area</button>
+            <p id="area"></p>
+        </div>
+        <div>
+            <input type="number" id="celsius" placeholder="Enter celsius">
+            <button onclick="celsiusToFahrenheit()"> Celsius to fahrenheit</button>
+            <p id="Fahrenheit"></p>
+        </div>
+        <div>
+            <input type="number" id="fahrenheit" placeholder="Enter fahrenheit">
+            <button onclick="fahrenheitToCelsius()">Fahrenheit to celsius</button>
+            <p id="Celsius"></p>
+        </div>
     </body>
     <footer>
         <script src="Function.js"></script>

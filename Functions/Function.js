@@ -5,14 +5,12 @@
 // Call that function 3 times with 3 different values for the arguments.
 
 function tellFortune() {
-    event.preventDefault();
 
     numOfChildren = document.getElementById("children").value;
     partnerName = document.getElementById("partner").value;
-    location = document.getElementById("location").value;
     jobTitle = document.getElementById("job").value;
 
-    document.getElementById("fortune").innerText = `You will be an ${jobTitle} in ${location}, and married to ${partnerName} with ${numOfChildren} kids.`);
+    document.getElementById("Fortune").innerText = `You will be a ${jobTitle} and married to ${partnerName} with ${numOfChildren} kids.`;
 }
 
 // You know how old your dog is in human years, but what about dog years? Calculate it!
@@ -22,9 +20,11 @@ function tellFortune() {
 // outputs the result to the screen like so: "Your doggie is NN years old in dog years!"
 // Call the function three times with different sets of values.
 
-function calculateDogAge(puppyAge) {
+function calculateDogAge() {
+    puppyAge = document.getElementById("dog-age").value;
+
     dogAge = puppyAge * 7;
-    console.log(`Your dog is ${dogAge} years old in dog years!`)
+    document.getElementById("age").innerHTML = `Your dog is ${dogAge} years old in dog years!`;
 }
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -35,10 +35,14 @@ function calculateDogAge(puppyAge) {
 // Call that function three times, passing in different values each time.
 
 function calculateSupply(item, age, amountPerDay) {
+    age = document.getElementById("current-age").value
+    amountPerDay = document.getElementById("amount-per-day").value
+    item = document.getElementById("Item").value
+
     maxAge = 80;
     amountPerYear = amountPerDay * 365.25;
     totalAmount = (maxAge - age) * amountPerYear;
-    console.log(`You need ${totalAmount} ${item} to reach ${maxAge}!`)
+    document.getElementById("supply").innerText = `You need ${totalAmount} ${item} to reach ${maxAge}!`;
 }
 
 // Create 2 functions that calculate the properties of a circle, using the definitionsLinks to an external site. here.
@@ -50,12 +54,12 @@ function calculateSupply(item, age, amountPerDay) {
 // Calculate the area based on the radius, and output "The area is NN".
 
 function calcCircumfrence(radius, diamiter) {
-    radius * Math.PI * 2 = circumfrence;
-    diamiter * Math.PI = circumfrence;
-    console.log(`The circumference is ${circumfrence}`)
+    radius = document.getElementById("radius").value
+    circumfrence = radius * Math.PI * 2;
+    document.getElementById("circumference").innerText = `The circumference is ${circumfrence}`;
 }
 
-const calcArea = function(radius) => console.log(`The area is ${Math.PI * radius * radius}`);
+const calcArea = (radius) => document.getElementById("area").innerText = `The area is ${Math.PI * document.getElementById("radius").value * document.getElementById("radius").value}`;
 
 // It's hot out! Let's make a converter based on the stepsLinks to an external site. here.
 // Create a function called celsiusToFahrenheit:
@@ -66,11 +70,13 @@ const calcArea = function(radius) => console.log(`The area is ${Math.PI * radius
 // Convert it to Celsius and output "NN°F is NN°C."
 
 function celsiusToFahrenheit(celsius) {
+    celsius = document.getElementById("celsius").value;
     fahrenheit = celsius * 9 / 5 + 32;
-    console.log(`${celsius}°C is ${fahrenheit}°F.`)
+    document.getElementById("Fahrenheit").innerText = `${celsius}°C is ${fahrenheit}°F.`;
 }
 
 function fahrenheitToCelsius(fahrenheit) {
+    fahrenheit = document.getElementById("fahrenheit").value;
     celsius = (fahrenheit - 32) * 5 / 9;
-    console.log(`${fahrenheit}°F is ${celsius}°C`) 
+    document.getElementById("Celsius").innerText = `${fahrenheit}°F is ${celsius}°C`;
 }
