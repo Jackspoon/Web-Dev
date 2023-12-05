@@ -45,8 +45,8 @@
     display: inline-block;
     width: 88px;
     height: 88px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   
