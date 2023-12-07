@@ -12,4 +12,3 @@ function calcExpences(shopping, gas, living, healthcare, taxes, other) {
 
     document.getElementById("expence").innerHTML = `Your surplus is $${surplus}.`
 }
-
