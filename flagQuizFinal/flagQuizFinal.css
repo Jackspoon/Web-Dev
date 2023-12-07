@@ -3,6 +3,36 @@
     margin: auto 0px auto  auto ;
 }
 
+.whiteText {
+    color: white;
+}
+
+.title {
+    margin: auto;
+}
+
+.xl {
+    font-size: x-large;
+} 
+
+.navBar {
+    background-color: rgb(145, 145, 145);
+    height: 54px;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    margin: auto;
+}
+
+.header {
+    background-color: black;
+    height: 2in;
+    width: 100%;
+    display: flex;
+}
+
 .hidden {
     display: none !important;
 }
