@@ -4,29 +4,27 @@
         <link rel="stylesheet" href="SimpleBudgeter.css">
     </head>
     <body>
-        <input type="number" id="income" placeholder="Income">
         <div>
-            <input type="number" id="shop" placeholder="Groceries"><br>
-            <input type="number" id="gas" placeholder="Gas"><br>
-            <input type="number" id="living" placeholder="House Payments"><br>
-            <input type="number" id="health" placeholder="Healthcare"><br>
-            <input type="number" id="taxes" placeholder="Taxes"><br>
-            <input type="number" id="other" placeholder="Other"><br>
+            <input class="center" type="number" id="income" placeholder="Income per month"><br><br>
+            <input class="center" type="number" id="shop" placeholder="Groceries"><br><br>
+            <input class="center" type="number" id="gas" placeholder="Gas"><br><br>
+            <input class="center" type="number" id="living" placeholder="House Payments"><br><br>
+            <input class="center" type="number" id="health" placeholder="Insurance"><br><br>
+            <input class="center" type="number" id="taxes" placeholder="Taxes"><br><br>
+            <input class="center" type="number" id="other" placeholder="Other"><br><br>
         </div>
-        <h2 id="expence"></h2><br>
-        <button onclick="calcExpences()">Calculate expences</button>
-        <ul>
-            <li id="first"></li>
-            <li id="second"></li>
-            <li id="third"></li>
-            <li id="fourth"></li>
-            <li id="fith"></li>
-            <li id="sixth"></li>
-            <li id="seventh"></li>
-            <li id="eighth"></li>
-            <li id="ninth"></li>
-            <li id="tenth"></li>
-        </ul>
+        <div>
+            <h2 id="expense" class="center big"></h2><br><br>
+            <button onclick="calcExpenses()" class="center">Calculate expenses</button><br>
+            <p class="center big">This will tell you your <a class="def" id="def">surplus*</a> and give you tips on how to increase it.</p><br>
+            <ul id="tips" class="center big">
+    
+            </ul>
+    
+        </div>
+        <div>
+            <p id="mode">Dark mode</p>
+        </div>
     </body>
     <footer>
         <script src="SimpleBudgeter.js"></script>
