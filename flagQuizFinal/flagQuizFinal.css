@@ -11,6 +11,21 @@
     margin: auto;
 }
 
+#findMiddle {
+    display: flex;
+}
+
+.Flagthing {
+    font-size: x-large;
+    cursor: pointer;
+    padding: 12px 0px 12px 0px;
+    margin: 0px;
+}
+
+.Flagthing:hover {
+    background-color: lightgray;
+}
+
 .xl {
     font-size: x-large;
 } 
@@ -35,6 +50,15 @@
 
 .hidden {
     display: none !important;
+}
+
+#flagFinds {
+    position: absolute;
+    border: solid black 2px;
+    background-color: white;
+    width: 389;
+    max-height: 204px;
+    overflow-y: scroll;
 }
 
 .optionValue {
