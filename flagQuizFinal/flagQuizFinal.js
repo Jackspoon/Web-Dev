@@ -99,12 +99,13 @@ function submit() {
         alert("You got all the flags correct")
 
         document.getElementById("conTainter").classList.remove("hidden")
+       
+    }
+    else {
+        alert("You got " + rightAnswer + " out of 11 correct! Try again for a reward!")
         setTimeout(() => {
             document.getElementById("conTainter").classList.add("hidden")
         }, 5000);
-    }
-    else {
-        alert("You got " + rightAnswer + " out of 11 correct")
     }
 
 }
