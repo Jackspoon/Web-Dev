@@ -54,6 +54,10 @@
     margin: auto;
 }
 
+.pointFiveMarg {
+    margin-top: .5in;
+}
+
 .header {
     background-color: black;
     height: 2in;
@@ -97,6 +101,14 @@
     width: 500px;
     background-color: rgb(101, 161, 11);
     margin: 0 auto;
+}
+
+#flagSubmit {
+    display: block;
+    height: 175px;
+    width: 500px;
+    background-color: rgb(101, 161, 11);
+    margin: .5in auto;
 }
 
 #option {
