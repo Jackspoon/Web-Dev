@@ -31,6 +31,7 @@ function submit() {
             return
         }
     }
+    let rightAnswer = 0
 
     const guess1 = guesses[0].value
     const guess2 = guesses[1].value
@@ -46,41 +47,64 @@ function submit() {
 
     if (guess1 === document.getElementById("op16").innerHTML) {
         document.getElementById("check16").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess2 === document.getElementById("op9").innerHTML) {
         document.getElementById("check9").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess3 === document.getElementById("op8").innerHTML) {
         document.getElementById("check8").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess4 === document.getElementById("op6").innerHTML) {
         document.getElementById("check6").classList.remove("hidden")
+        rightAnswer++
     
     }
     if (guess5 === document.getElementById("op7").innerHTML) {
         document.getElementById("check7").classList.remove("hidden")
+        rightAnswer++
     
     }
     if (guess6 === document.getElementById("op2").innerHTML) {
         document.getElementById("check2").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess7 === document.getElementById("op11").innerHTML) {
         document.getElementById("check11").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess8 === document.getElementById("op3").innerHTML) {
         document.getElementById("check3").classList.remove("hidden")
+        rightAnswer++
     
     }
     if (guess9 === document.getElementById("op13").innerHTML) {
         document.getElementById("check13").classList.remove("hidden")
+        rightAnswer++
     
     }
     if (guess10 === document.getElementById("op12").innerHTML) {
         document.getElementById("check12").classList.remove("hidden")
+        rightAnswer++
     }
     if (guess11 === document.getElementById("op15").innerHTML) {
         document.getElementById("check15").classList.remove("hidden")
+        rightAnswer++
     
+    }
+
+    if (rightAnswer === 11) {
+        alert("You got all the flags correct")
+
+        document.getElementById("conTainter").classList.remove("hidden")
+        setTimeout(() => {
+            document.getElementById("conTainter").classList.add("hidden")
+        }, 5000);
+    }
+    else {
+        alert("You got " + rightAnswer + " out of 11 correct")
     }
 
 }
